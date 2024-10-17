@@ -9,10 +9,8 @@ const DownloadApk = () => {
                     <Heading>Download APP</Heading>
                     <Button colorScheme='blue'>Get started</Button>
                 </Stack>
-
             </Center>
         </Box>
-
     )
 }
 
