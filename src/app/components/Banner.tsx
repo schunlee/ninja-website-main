@@ -1,5 +1,5 @@
 
-import { Box, Container, Image, SimpleGrid, Stack } from '@chakra-ui/react';
+import { Box, Image, SimpleGrid, Stack } from '@chakra-ui/react';
 import React from 'react';
 
 const Banner = () => {
