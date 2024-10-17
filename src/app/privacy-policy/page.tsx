@@ -1,6 +1,6 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 
-import { getPostBySlug, getAllPosts } from "@/app/lib/posts";
+import { getPostBySlug} from "@/app/lib/posts";
 import { Box, Container } from "@chakra-ui/react";
 
 async function getPost() {

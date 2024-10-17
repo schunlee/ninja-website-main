@@ -13,7 +13,7 @@ export default async function Posts() {
         <Stack spacing={0} align={'center'}>
           <Heading>Game Blogs</Heading>
           <SimpleGrid columns={2} spacing={10} marginTop={50}>
-            {posts?.map((post: any) => (
+            {posts?.map((post) => (
               <Box
                 key={post.slug}
                 maxW={'450px'}

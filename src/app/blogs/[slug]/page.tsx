@@ -2,7 +2,6 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 
 import { getPostBySlug, getAllPosts } from "@/app/lib/posts";
 import { Box, Image, Text, Container, Flex, Heading, SimpleGrid, Stack } from "@chakra-ui/react";
-import { serialize } from 'next-mdx-remote/serialize';
 
 
 type Props = {
@@ -20,7 +19,7 @@ export const dynamicParams = false;
 export async function generateStaticParams() {
     const posts = getAllPosts();
 
-    return posts.map((post: any) => ({ slug: post.slug }));
+    return posts.map((post) => ({ slug: post.slug }));
 }
 
 export default async function Post({ params }: Props) {
