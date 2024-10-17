@@ -10,6 +10,7 @@ import {
     Button,
     useColorModeValue,
     AspectRatio,
+    Link,
 } from '@chakra-ui/react'
 
 export default function CallToActionWithVideo() {
@@ -71,7 +72,7 @@ export default function CallToActionWithVideo() {
                                 colorScheme={'blue'}
                                 bg={'blue.400'}
                                 _hover={{ bg: 'blue.500' }}>
-                                Get started
+                                <Link href='https://cdn.pixelshippuden.com/pixelshippuden_f_release_1008201500.apk'>Get started</Link>
                             </Button>
                         </Stack>
                     </Stack>
