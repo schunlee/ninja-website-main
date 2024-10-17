@@ -6,6 +6,7 @@ const rubik = Rubik({
   variable: '--font-rubik',
 })
 
+
 export const fonts = {
   rubik,
 }
