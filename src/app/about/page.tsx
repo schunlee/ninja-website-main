@@ -24,6 +24,30 @@ export default function CallToActionWithVideo() {
                     py={{ base: 20, md: 28 }}
                     direction={{ base: 'column', md: 'row' }}>
 
+                    
+
+                    <Flex
+                        flex={1}
+                        justify={'center'}
+                        align={'center'}
+                        position={'relative'}
+                        w={'full'}>
+                        <Box
+                            position={'relative'}
+                            height='full'
+                            rounded={'2xl'}
+                            boxShadow={'2xl'}
+                            width={'full'}
+                            overflow={'hidden'}>
+                            <AspectRatio ratio={1}>
+                                <iframe
+                                    title='naruto'
+                                    src='/video-9.mp4'
+                                    allowFullScreen
+                                />
+                            </AspectRatio>
+                        </Box>
+                    </Flex>
                     <Stack flex={1} spacing={{ base: 5, md: 10 }}>
                         <Heading
                             lineHeight={1.1}
@@ -76,29 +100,6 @@ export default function CallToActionWithVideo() {
                             </Button>
                         </Stack>
                     </Stack>
-
-                    <Flex
-                        flex={1}
-                        justify={'center'}
-                        align={'center'}
-                        position={'relative'}
-                        w={'full'}>
-                        <Box
-                            position={'relative'}
-                            height='full'
-                            rounded={'2xl'}
-                            boxShadow={'2xl'}
-                            width={'full'}
-                            overflow={'hidden'}>
-                            <AspectRatio ratio={1}>
-                                <iframe
-                                    title='naruto'
-                                    src='/video-7.mp4'
-                                    allowFullScreen
-                                />
-                            </AspectRatio>
-                        </Box>
-                    </Flex>
 
                 </Stack>
             </Container>

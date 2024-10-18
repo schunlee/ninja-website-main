@@ -6,7 +6,7 @@ const DownloadApk = () => {
     return (
         <Box bg="gray.100">
             <Center>
-                <Stack>
+                <Stack mt="10">
                     <Heading>Download APP</Heading>
                     <Button colorScheme='blue'>Get started</Button>
                 </Stack>

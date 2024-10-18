@@ -1,16 +1,22 @@
-
 import { Box, Image, SimpleGrid, Stack } from '@chakra-ui/react';
 import React from 'react';
 
 const Banner = () => {
     return (
-        <Box bg='gray.100' display="flex" justifyContent="center" alignItems="center" minH="70vh">
-            <Stack align="center" w="60%" spacing={10}>
-                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                    <Image src="/ads-3.png" />
-                    <Image src="/ads-2.png" />
-                </SimpleGrid>
-            </Stack>
+        <Box bg='gray.100' display="flex" justifyContent="center" alignItems="center" minH="70vh" position="relative">
+            <SimpleGrid columns={{ base: 2, md: 2 }} w="60%">
+                <Image src="/banner-1.png" />
+                <Image src="/banner-2.png" />
+            </SimpleGrid>
+            <Image 
+                src="/logo-Z.png" 
+                position="absolute" 
+                top="5%" 
+                left="50%" 
+                transform="translateX(-50%)" 
+                zIndex="5" 
+                w="20%"
+            />
         </Box>
     );
 }

@@ -53,15 +53,15 @@ const TestimonialContent = (props: Props) => {
   )
 }
 
-const TestimonialHeading = (props: Props) => {
-  const { children } = props
+// const TestimonialHeading = (props: Props) => {
+//   const { children } = props
 
-  return (
-    <Heading as={'h3'} fontSize={'xl'}>
-      {children}
-    </Heading>
-  )
-}
+//   return (
+//     <Heading as={'h3'} fontSize={'xl'}>
+//       {children}
+//     </Heading>
+//   )
+// }
 
 const TestimonialText = (props: Props) => {
   const { children } = props
@@ -103,21 +103,20 @@ export default function GamerComments() {
     <Box bg={useColorModeValue('gray.100', 'gray.700')}>
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
-          <Heading>Player Reviews</Heading>
-          <Text marginTop={5}>We have received feedback from gamers around the world about Pixel Shippuden.</Text>
+          <Heading>Pixel Shippuden</Heading>
+          <Text marginTop={5} w="60%">Enter the Naruto universe in our pixel-style RPG! 
+            Join iconic characters, explore the Hidden Leaf Village, and complete epic missions. 
+            Customize your ninja, master unique skills, and face off against powerful enemies. 
+            With nostalgic pixel art and engaging gameplay, this is the perfect adventure for any Naruto fan!</Text>
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
           spacing={{ base: 10, md: 4, lg: 10 }}>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Nostalgic Game</TestimonialHeading>
+              {/* <TestimonialHeading>Nostalgic Game</TestimonialHeading> */}
               <TestimonialText>
-                As a longtime fan of pixel art games,
-                Pixel Shippuden brings back so many memories of my childhood gaming experiences.
-                The visuals are stunning and remind me of the classic games I grew up with.
-                The vibrant colors and detailed pixel art truly capture the essence of what made those games special.
-                I find myself immersed in the world every time I play!
+              Man, this pixel-art Naruto RPG is awesome! It captures the vibe of the classic anime perfectly while making it fun. I love the character customization - making your own ninja is so cool! And the soundtrack? Totally retro!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -130,13 +129,9 @@ export default function GamerComments() {
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Competitive Players</TestimonialHeading>
+              {/* <TestimonialHeading>Competitive Players</TestimonialHeading> */}
               <TestimonialText>
-                I love the competitive aspect of Pixel Shippuden!
-                The gameplay is fast-paced and requires strategy and skill, which keeps me coming back for more.
-                The variety of characters and their unique abilities add depth to battles,
-                making each match feel fresh and exciting.
-                It’s great to see a mobile game that challenges me and rewards my efforts!
+              This pixel-style Naruto RPG is awesome! The retro graphics are really cool and the gameplay is more strategic than I expected. It's perfect for anyone who loves Naruto and wants something fresh but nostalgic. Definitely worth a try!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -149,14 +144,9 @@ export default function GamerComments() {
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Casual Game</TestimonialHeading>
+              {/* <TestimonialHeading>Casual Game</TestimonialHeading> */}
               <TestimonialText>
-                As someone who enjoys mobile games in short bursts,
-                Pixel Shippuden is perfect for me!
-                The controls are intuitive, and I can easily pick it up and play for a few minutes at a time.
-                The storyline is engaging without being overwhelming,
-                and the side quests offer just the right amount of challenge.
-                It's a delightful experience that I can enjoy anywhere!
+              I've been watching Naruto, but when it comes out in a game like this, l feel like i'm back in my childhood.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar

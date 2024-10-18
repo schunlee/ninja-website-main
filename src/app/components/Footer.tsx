@@ -71,7 +71,8 @@ export default function Footer() {
           direction={{ base: 'column', md: 'row' }}
           justify="center"
           align={{ md: 'center' }}>
-          <Center><Text>© {new Date().getFullYear()} Naruto Shippuden. All rights reserved</Text></Center>
+          <Center><Text>© {new Date().getFullYear()} Naruto Shippuden</Text></Center>
+          <Center><Text>All rights reserved</Text></Center>
         </Container>
       </Box>
     </Box>
