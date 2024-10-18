@@ -1,5 +1,5 @@
 import { getAllPosts } from "@/app/lib/posts";
-import { Box, Stack, Heading, SimpleGrid, Avatar, Text, Container, Image } from "@chakra-ui/react";
+import { Box, Stack, Heading, SimpleGrid, Text, Container, Image } from "@chakra-ui/react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { Link } from '@chakra-ui/react'
 
