@@ -1,4 +1,4 @@
-import { Box, Button, Center, Heading, Stack } from '@chakra-ui/react'
+import { Box, Button, Center, Heading, Link, Stack } from '@chakra-ui/react'
 import React from 'react'
 
 
@@ -8,7 +8,7 @@ const DownloadApk = () => {
             <Center>
                 <Stack mt="10">
                     <Heading>Download APP</Heading>
-                    <Button colorScheme='blue'>Get started</Button>
+                    <Button colorScheme='blue'><Link href='https://cdn.pixelshippuden.com/pixelshippuden_f_release_1008201500.apk'>Get started</Link></Button>
                 </Stack>
             </Center>
         </Box>
