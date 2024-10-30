@@ -9,7 +9,7 @@ const Banner = () => {
                 <Image src="/banner-2.png" />
             </SimpleGrid>
             <Image 
-                src="/logo-Z.png" 
+                src="/logo.png" 
                 position="absolute" 
                 top="5%" 
                 left="50%" 
