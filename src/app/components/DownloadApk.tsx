@@ -8,7 +8,7 @@ const DownloadApk = () => {
             <Center>
                 <Stack mt="10">
                     <Heading>Download APP</Heading>
-                    <Button colorScheme='blue'><Link href='https://cdn.pixelshippuden.com/pixelshippuden_f_release_1008201500.apk'>Get started</Link></Button>
+                    <Button colorScheme='blue'><Link href='https://cdn.jksfun.com/xshy_apk/pixelshippuden_f_release_1021120000.apk'>Get started</Link></Button>
                 </Stack>
             </Center>
         </Box>
