@@ -96,7 +96,7 @@ export default function CallToActionWithVideo() {
                                 colorScheme={'blue'}
                                 bg={'blue.400'}
                                 _hover={{ bg: 'blue.500' }}>
-                                <Link href='https://cdn.pixelshippuden.com/pixelshippuden_f_release_1008201500.apk'>Get started</Link>
+                                <Link href='https://cdn.jksfun.com/xshy_apk/pixelshippuden_f_release_1021120000.apk'>Get started</Link>
                             </Button>
                         </Stack>
                     </Stack>
