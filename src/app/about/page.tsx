@@ -18,7 +18,7 @@ export default function About() {
   return (
     <Box
       bg={"gray.100"}
-      zIndex="-2"
+      zIndex="0"
       position="relative"
       display="flex"
       justifyContent="center"
@@ -38,6 +38,7 @@ export default function About() {
             w={"full"}
           >
             <Box
+            zIndex={20}
               position={"relative"}
               height="full"
               rounded={"2xl"}
