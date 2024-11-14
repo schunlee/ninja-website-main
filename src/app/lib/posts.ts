@@ -7,6 +7,7 @@ const postsDir = join(process.cwd(), "posts");
 type MetaData = {
   title: string;
   date: Date;
+  abstract: string;
   category: string;
   banner_url: string;
   tags?: string[];
@@ -31,9 +32,9 @@ export function getPostBySlug(slug: string) {
 
   // 配置文章元数据
   const meta = { ...data } as MetaData;
-  const { banner_url } = meta;
+  const { banner_url, abstract } = meta;
 
-  return { slug: realSlug, meta, content, excerpt, banner_url};
+  return { slug: realSlug, meta, abstract, content, excerpt, banner_url};
 }
 
 // 获取 /posts文件夹下所用markdown文档

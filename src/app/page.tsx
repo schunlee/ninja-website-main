@@ -8,10 +8,10 @@ import GamerComments from './components/GamerComments'
 export default function Page() {
   return (
     <>
-      {/* <Carousel /> */}
       <Banner />
       <DownloadApk />
       <GamerComments />
+      
 
     </>
 

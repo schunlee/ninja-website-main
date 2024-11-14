@@ -1,7 +1,8 @@
 ---
-title: My Second Post
-date: 2022-02-22T22:22:22
-banner_url: /ads-3.png
+title: Legendary ninjas bring great rewards!
+date: 2024-10-18
+banner_url: /blogs-2-p.jpg
+abstract: Ninjas! Get ready to enjoy Halloween!
 ---
 
 

@@ -1,11 +1,12 @@
 ---
-title: My First Post
-date: 2022-02-22T22:22:22
-banner_url: /ads-6.png
+title: Jiraiya's birthday!!
+date: 2024-11-11
+banner_url: /blogs-1-p.jpg
+abstract: The great story of Jiraiya! Happy birthday to Jiraiya from "Naruto"
 ---
 
 
-# Pixel Shippuden: A Retro Ninja Adventure
+# The great story of Jiraiya! Happy birthday to Jiraiya from "Naruto"
 ## Pixel Shippuden is a unique tribute to both the beloved Naruto universe and classic retro gaming. With pixelated aesthetics, fast-paced action, and iconic characters, it merges the nostalgia of old-school games with the excitement of ninja combat.
 
 

@@ -198,8 +198,8 @@ const NAV_ITEMS: Array<NavItem> = [
         href: '/about',
     },
     {
-        label: 'Blogs',
-        href: '/blogs',
+        label: 'Games',
+        href: '/games',
     },
     {
         label: 'FAQ',

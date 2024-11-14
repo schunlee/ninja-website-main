@@ -32,18 +32,8 @@ export default async function Post({ params }: Props) {
                     columns={{ base: 1, lg: 1 }}
                     alignContent="center"
                     spacing={{ base: 8, md: 10 }}>
-                    <Flex justifyContent="center" mt="10">
-                        <Image
-                            rounded={'md'}
-                            alt={'product image'}
-                            src={post.meta?.banner_url.toString()}
-                            fit={'cover'}
-                            align={'center'}
-                            w='300px'
-                            h='300px'
-                        />
-                    </Flex>
-                    <Stack spacing={{ base: 6, md: 10 }}>
+                    
+                    <Stack spacing={{ base: 6, md: 10 }} pt="20px">
                         <Box as={'header'} textAlign="center">
                             <Heading
                                 lineHeight={1.1}
@@ -62,6 +52,17 @@ export default async function Post({ params }: Props) {
                                 })}
                             </Text>
                         </Box>
+                        <Flex justifyContent="center" mt="10">
+                        <Image
+                            rounded={'md'}
+                            alt={'product image'}
+                            src={post.meta?.banner_url.toString()}
+                            fit={'cover'}
+                            align={'center'}
+                            w='300px'
+                            h='300px'
+                        />
+                    </Flex>
                     </Stack>
                     <Stack fontSize={'2xl'}>
                         <MDXRemote source={post.content}/>
