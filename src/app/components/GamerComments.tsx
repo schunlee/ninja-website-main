@@ -3,13 +3,11 @@
 import {
   Box,
   Flex,
-  Center,
   Text,
   Stack,
   Container,
   Avatar,
   useColorModeValue,
-  Spacer,
 } from "@chakra-ui/react";
 import DecoratedText from "./DecoratedText";
 

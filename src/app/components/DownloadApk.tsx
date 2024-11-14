@@ -1,7 +1,6 @@
-import { Box, Button, Center, Heading, Text, Stack } from "@chakra-ui/react";
+import { Box, Center, Stack } from "@chakra-ui/react";
 import React from "react";
 import { AndroidBadge } from "./AndroidBadge";
-import CallToActionWithVideo from "./DecoratedText";
 import DecoratedText from "./DecoratedText";
 
 const DownloadApk = () => {

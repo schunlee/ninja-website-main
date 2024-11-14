@@ -2,7 +2,6 @@ import {
   Container,
   Box,
   Stack,
-  Heading,
   Accordion,
   AccordionButton,
   AccordionIcon,
