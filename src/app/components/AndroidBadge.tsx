@@ -4,7 +4,7 @@ export const AndroidBadge = () => {
   return (
     <Button
       as="a"
-      href="https://cdn.pixelshippuden.com/pixelshippuden_f_release_1008201500.apk" // 替换为你的apk链接
+      href="https://cdn.jksfun.com/xshy_apk/pixelshippuden_f_release_1021120000.apk" // 替换为你的apk链接
       target="_blank"
       rel="noopener noreferrer"
       variant="link"

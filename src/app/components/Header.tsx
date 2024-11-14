@@ -207,7 +207,7 @@ const NAV_ITEMS: Array<NavItem> = [
     },
     {
         label: 'Install Game',
-        href: 'https://cdn.pixelshippuden.com/pixelshippuden_f_release_1008201500.apk',
+        href: 'https://cdn.jksfun.com/xshy_apk/pixelshippuden_f_release_1021120000.apk',
     },
 ]
 

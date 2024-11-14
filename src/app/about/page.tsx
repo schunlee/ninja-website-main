@@ -67,7 +67,6 @@ export default function About() {
                 Pixel_Style Naruto RPG
               </Text>
             </Heading>
-
             <Text color={"gray.500"} fontSize="18">
               Naruto Ninja Storm allows players to battle with players accross
               over the world. Players can build your Power Naruto Team and
