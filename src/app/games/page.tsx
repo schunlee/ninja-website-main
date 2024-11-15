@@ -10,15 +10,16 @@ import {
 } from "@chakra-ui/react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { Link } from "@chakra-ui/react";
+import DecoratedText from "../components/DecoratedText";
 
 export default async function Posts() {
   const posts = await getAllPosts();
 
   return (
-    <Box bg="gray.100">
+    <Box bg="gray.100" position="relative" zIndex="0">
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
-          <Heading>Games</Heading>
+          <DecoratedText>Games</DecoratedText>
           <SimpleGrid columns={[1, 2]} spacing={10} marginTop={50}>
             {posts?.map((post) => (
               <Box
@@ -60,7 +61,6 @@ export default async function Posts() {
                     className="group font-normal overflow-hidden cursor-pointer no-underline transition fade-in-up "
                   >
                     <Heading
-                      // eslint-disable-next-line react-hooks/rules-of-hooks
                       color="gray.700"
                       fontSize={"2xl"}
                       fontFamily={"body"}
