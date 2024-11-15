@@ -1,6 +1,3 @@
-import { MDXRemote } from "next-mdx-remote/rsc";
-
-import { getPostBySlug } from "@/app/lib/posts";
 import {
   Text,
   Heading,
@@ -11,13 +8,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import DecoratedText from "../components/DecoratedText";
-import { Span } from "next/dist/trace";
 
-async function getPost() {
-  const post = getPostBySlug("privacy-policy");
-  console.log(post);
-  return { post };
-}
 
 export default async function PrivacyPolicy() {
   return (
