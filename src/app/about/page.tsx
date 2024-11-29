@@ -48,7 +48,7 @@ export default function About() {
               <AspectRatio ratio={1}>
                 <iframe
                   title="naruto"
-                  src="https://www.youtube.com/embed/sX96XQTyQXg"
+                  src="https://www.youtube.com/embed/TZYo2QxwV58"
                   allowFullScreen
                 />
               </AspectRatio>
