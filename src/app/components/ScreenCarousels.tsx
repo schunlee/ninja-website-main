@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Box, Center, Flex, HStack, Image, Text } from "@chakra-ui/react";
-import { list } from "postcss";
 
 interface Slide {
     img: string;

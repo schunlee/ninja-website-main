@@ -7,11 +7,9 @@ import {
   Stack,
   SimpleGrid,
   Text,
-  useColorModeValue,
   Center,
 } from "@chakra-ui/react";
 
-import { AndroidBadge } from "./AndroidBadge";
 import CookieConsent from "react-cookie-consent";
 import FooterButton from "./FooterButton";
 

@@ -7,14 +7,10 @@ import {
   Box,
   Heading,
   Text,
-  Button,
   Image,
   AspectRatio,
-  Link,
   Center,
-  Spacer,
 } from "@chakra-ui/react";
-import DecoratedText from "../components/DecoratedText";
 import PlayButton from "../components/PlayButton";
 import { fonts } from "../fonts";
 

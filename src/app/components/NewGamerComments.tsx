@@ -8,7 +8,6 @@ import {
   Container,
   Avatar,
   Image,
-  useColorModeValue,
   HStack,
   Center,
 } from "@chakra-ui/react";

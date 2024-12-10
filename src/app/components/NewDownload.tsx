@@ -4,8 +4,8 @@ import { fonts } from "../fonts";
 import PlayButton from "./PlayButton";
 import GameScreen from "./GameScreen";
 import Epic from "./Epic";
-import Banner from "./Banner";
 import GamerReviews from "./NewGamerComments";
+import Banner from "./Banner";
 
 const NewDownload = () => {
   return (
