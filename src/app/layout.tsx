@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fonts} from './fonts';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -10,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 import { Providers } from "./providers";
-import { fonts } from "./fonts";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+
 
 export default function RootLayout({
   children,
@@ -20,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={fonts.rubik.variable}>
+    <html lang="en" className={`${fonts.hanyiFont.className} ${fonts.siyuanFont.className} ${fonts.ruiziFont.className}`}>
       <body>
         <Providers>
           <Header />

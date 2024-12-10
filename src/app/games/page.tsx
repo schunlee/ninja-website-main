@@ -5,28 +5,41 @@ import {
   Heading,
   SimpleGrid,
   Text,
+  Center,
   Container,
   Image,
+  Spacer,
 } from "@chakra-ui/react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { Link } from "@chakra-ui/react";
-import DecoratedText from "../components/DecoratedText";
+import { fonts } from "../fonts";
 
 export default async function Posts() {
   const posts = await getAllPosts();
 
   return (
-    <Box bg="gray.100" position="relative" zIndex="0">
-      <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
+    <Box backgroundImage="url('new_bg.png')" bgSize="cover">
+      <Container maxW={"7xl"} pb="30px" as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
-          <DecoratedText>Games</DecoratedText>
+        <Spacer pt="30px"></Spacer>
+          <Center>
+            <Image src="star.png" objectFit="cover" h="50px" mr="20px" />
+            <Text
+              fontFamily={fonts.ruiziFont.style.fontFamily}
+              fontSize="50px"
+              color="rgb(142, 53, 28)"
+            >
+              Games
+            </Text>
+            <Image src="star.png" objectFit="cover" h="50px" ml="20px" />
+          </Center>
           <SimpleGrid columns={[1, 2]} spacing={10} marginTop={50}>
             {posts?.map((post) => (
               <Box
                 key={post.slug}
                 maxW={"450px"}
                 w={"full"}
-                bg="white"
+                bg="rgb(142, 53, 28)"
                 boxShadow={"2xl"}
                 rounded={"md"}
                 p={6}
@@ -61,18 +74,16 @@ export default async function Posts() {
                     className="group font-normal overflow-hidden cursor-pointer no-underline transition fade-in-up "
                   >
                     <Heading
-                      color="gray.700"
+                      color="whiteAlpha.800"
                       fontSize={"2xl"}
                       fontFamily={"body"}
                     >
                       {post.meta?.title}
                     </Heading>
                   </Link>
-                  <Box color={"gray.500"} minH="20">
+                  <Box color="whiteAlpha.800" minH="20">
                     <MDXRemote
-                      source={
-                        post.abstract
-                      }
+                      source={post.abstract}
                       components={{}}
                       options={{}}
                     />

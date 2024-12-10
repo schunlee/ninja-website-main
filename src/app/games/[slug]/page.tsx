@@ -64,7 +64,7 @@ export default async function Post({ params }: Props) {
                         />
                     </Flex>
                     </Stack>
-                    <Stack fontSize={'2xl'}>
+                    <Stack fontSize={'2xl'} >
                         <MDXRemote source={post.content}/>
                     </Stack>
                 </SimpleGrid>

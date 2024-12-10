@@ -8,11 +8,13 @@ import {
   AccordionItem,
   AccordionPanel,
   Text,
+  Image,
   Spacer,
+  Center,
 } from "@chakra-ui/react";
 
 import React from "react";
-import DecoratedText from "../components/DecoratedText";
+import { fonts } from "../fonts";
 
 const faq_list = [
   {
@@ -69,14 +71,21 @@ const faq_list = [
 
 const FAQ = () => {
   return (
-    <Box bg="gray.100" zIndex={0} position="relative">
+    <Box
+      backgroundImage="url('new_bg.png')"
+      bgSize="cover"
+    >
       <Container maxW="80%">
         <Spacer pt="30px"></Spacer>
-        <Box></Box>
-      <DecoratedText>Frequently </DecoratedText><DecoratedText>Asked </DecoratedText><DecoratedText>Questions</DecoratedText>
+        <Center>
+          <Image src="star.png" objectFit="cover" h="50px" mr="20px" />
+          <Text fontFamily={fonts.ruiziFont.style.fontFamily} fontSize="50px" color="rgb(142, 53, 28)">
+            FAQ
+          </Text>
+          <Image src="star.png" objectFit="cover" h="50px" ml="20px" />
+        </Center>
         <Stack minH="1000">
-          
-          <Text color={"gray.500"} fontSize="18">
+          <Text color="rgb(142, 53, 28)" fontSize="18" fontWeight="semibold">
             Welcome to our FAQ section! Here, you'll find answers to the most
             common questions about Naruto Storm, including gameplay, updates,
             and technical support. Whether you're a new player just starting
@@ -84,36 +93,45 @@ const FAQ = () => {
             to provide clear and concise information to enhance your gaming
             experience.
           </Text>
-          <Box zIndex={20} position="relative">
-          <Accordion defaultIndex={[-1]} allowMultiple>
-            {faq_list.map((item, index) => (
-              <AccordionItem key={index} marginTop={5}>
-                <h2>
-                  <AccordionButton
-                    bgColor="blue.400"
-                    _hover={{ bgColor: "blue.500" }}
-                    borderRadius="md"
+          <Box>
+            <Accordion defaultIndex={[-1]} allowMultiple mb="30px">
+              {faq_list.map((item, index) => (
+                <AccordionItem key={index} marginTop={5}>
+                  <h2>
+                    <AccordionButton
+                      bgColor="rgb(142, 53, 28)"
+                      _hover={{ bgColor: "rgb(78, 27, 16)" }}
+                      borderRadius="md"
+                      borderColor="rgb(142, 53, 28)"
+                    >
+                      <Box
+                        as="span"
+                        flex="1"
+                        textAlign="left"
+                        textColor="whiteAlpha.800"
+                        fontWeight="semibold"
+                      >
+                        {item["title"]}
+                      </Box>
+                      <AccordionIcon color="rgb(142, 53, 28)" />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel
+                    pb={4}
+                    borderBottom="1px"
+                    borderLeft="1px"
+                    borderRight="1px"
+                    fontWeight="semibold"
+                    color="rgb(142, 53, 28)"
+                    borderBottomLeftRadius="lg"
+                    borderBottomRightRadius="lg"
+                    borderColor="rgb(142, 53, 28)"
                   >
-                    <Box as="span" flex="1" textAlign="left" textColor="white">
-                      {item["title"]}
-                    </Box>
-                    <AccordionIcon color="white" />
-                  </AccordionButton>
-                </h2>
-                <AccordionPanel
-                  pb={4}
-                  borderBottom="1px"
-                  borderLeft="1px"
-                  borderRight="1px"
-                  borderBottomLeftRadius="lg"
-                  borderBottomRightRadius="lg"
-                  borderColor="gray.300"
-                >
-                  {item["description"]}
-                </AccordionPanel>
-              </AccordionItem>
-            ))}
-          </Accordion>
+                    {item["description"]}
+                  </AccordionPanel>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </Box>
         </Stack>
       </Container>
