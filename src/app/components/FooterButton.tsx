@@ -3,7 +3,7 @@ import React from 'react'
 
 function FooterButton() {
   return (
-    <Avatar src='download-2.png'></Avatar>
+    <Avatar as="a" href="https://cdn.jksfun.com/xshy_apk/pixelshippuden_f_release_1127160000.apk" src='download-2.png'></Avatar>
   )
 }
 

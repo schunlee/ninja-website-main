@@ -4,6 +4,8 @@ import React from "react";
 function DownloadButton() {
   return (
     <Button
+      as="a"
+      href="https://cdn.jksfun.com/xshy_apk/pixelshippuden_f_release_1127160000.apk"
       bgColor="black"
       mr={3}
       backgroundImage="url('download.png')" // 替换为你的图片路径
