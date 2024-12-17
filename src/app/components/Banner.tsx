@@ -6,7 +6,7 @@ const Banner = () => {
     <Box
     >
       <Center>
-        <Image src="/banner-3.png" borderBottomLeftRadius="lg" width="100%"/>
+        <Image src="https://pics.narutostorm.com/banner-3.png" borderBottomLeftRadius="lg" width="100%"/>
       </Center>
     
     </Box>

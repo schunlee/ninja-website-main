@@ -18,7 +18,7 @@ export default async function Posts() {
   const posts = await getAllPosts();
 
   return (
-    <Box backgroundImage="url('new_bg.png')" bgSize="cover">
+    <Box backgroundImage="url('https://pics.narutostorm.com/new_bg.png')" bgSize="cover">
       <Container maxW={"7xl"} pb="30px" as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
         <Spacer pt="30px"></Spacer>

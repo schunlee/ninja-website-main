@@ -17,7 +17,7 @@ import { fonts } from "../fonts";
 export default function About() {
   return (
     <Box
-      backgroundImage="url('new_bg.png')"
+      backgroundImage="url('https://pics.narutostorm.com/new_bg.png')"
       bgSize="cover" // 背景覆盖
       display="flex"
       justifyContent="center"
@@ -58,7 +58,7 @@ export default function About() {
                 <AspectRatio ratio={1}>
                   <iframe
                     title="naruto"
-                    src="https://www.youtube.com/embed/sX96XQTyQXg"
+                    src="https://www.youtube.com/embed/VOUqDTJX7ms"
                     allowFullScreen
                   />
                 </AspectRatio>

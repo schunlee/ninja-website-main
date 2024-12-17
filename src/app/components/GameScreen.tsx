@@ -7,13 +7,13 @@ function GameScreen() {
 
     const slides = [
         {
-          img: "screen_1.png",
+          img: "https://pics.narutostorm.com/screen_1.png",
         },
         {
-          img: "screen_2.png",
+          img: "https://pics.narutostorm.com/screen_2.png",
         },
         {
-          img: "screen_3.png",
+          img: "https://pics.narutostorm.com/screen_3.png",
         },
       ];
   return (

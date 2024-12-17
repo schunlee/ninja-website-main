@@ -149,7 +149,7 @@ export default function GamerReviews() {
           <Center>
             <Testimonial>
               <TestimonialAvatar
-                src={"/yukihiro.png"}
+                src={"https://pics.narutostorm.com/yukihiro.png"}
                 name={"Yukihiro"}
                 title={"from Tokyo"}
               />
@@ -172,7 +172,7 @@ export default function GamerReviews() {
                 </TestimonialText>
               </RightTestimonialContent>
               <TestimonialAvatar
-                src={"/marco.png"}
+                src={"https://pics.narutostorm.com/marco.png"}
                 name={"Marco"}
                 title={"from Los Angeles"}
               />
@@ -181,7 +181,7 @@ export default function GamerReviews() {
           <Center>
             <Testimonial>
               <TestimonialAvatar
-                src={"/sabrina.png"}
+                src={"https://pics.narutostorm.com/sabrina.png"}
                 name={"Sabrina"}
                 title={"from Seoul"}
               />

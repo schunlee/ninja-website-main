@@ -12,7 +12,7 @@ const NewDownload = () => {
     <Center
       pt="0px"
       mt="-1px"
-      backgroundImage="url('new_bg.png')"
+      backgroundImage="url('https://pics.narutostorm.com/new_bg.png')"
       bgSize="cover" // 背景覆盖
       fontSize="lg"
       fontWeight="bold"
@@ -21,7 +21,7 @@ const NewDownload = () => {
       <Stack>
         <Banner />
         <Center mt="30px">
-          <Image src="desc_header.png" w={{ base: "350px", md: "800px" }} />
+          <Image src="https://pics.narutostorm.com/desc_header.png" w={{ base: "350px", md: "800px" }} />
         </Center>
 
         <Container w={{ base: "350px", md: "800px" }}>
