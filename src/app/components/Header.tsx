@@ -152,10 +152,7 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ activeNav, setActiveNav }) => {
 
 const MobileNav = () => {
   return (
-    <Stack
-      p={4}
-      display={{ md: "none" }}
-    >
+    <Stack p={4} display={{ md: "none" }}>
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -224,6 +221,10 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "News",
     href: "/news",
+  },
+  {
+    label: "Anime",
+    href: "/anime",
   },
   {
     label: "FAQ",
