@@ -1,18 +1,13 @@
 import {
   Box,
   Stack,
-  Heading,
   SimpleGrid,
   Text,
   Center,
   Container,
   Image,
   Spacer,
-  HStack,
-  Link,
 } from "@chakra-ui/react";
-import { FaArrowAltCircleRight } from "react-icons/fa";
-import { IoPlayForward } from "react-icons/io5";
 import { fonts } from "../fonts";
 import VideoCard from "../components/VideoCard";
 
