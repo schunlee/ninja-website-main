@@ -179,9 +179,3 @@ const VideoCard = ({ hoverPic, title }: Props) => {
 };
 
 export default VideoCard;
-function useHook(): [any, any] {
-  throw new Error("Function not implemented.");
-}
-function clickHandler() {
-  throw new Error("Function not implemented.");
-}
