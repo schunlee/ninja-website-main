@@ -29,7 +29,7 @@ export default async function Posts() {
               fontSize="50px"
               color="rgb(142, 53, 28)"
             >
-              Games
+              News
             </Text>
             <Image src="star.png" objectFit="cover" h="50px" ml="20px" />
           </Center>

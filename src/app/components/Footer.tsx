@@ -41,8 +41,8 @@ export default function Footer() {
             <Box as="a" href={"/about"}>
               About
             </Box>
-            <Box as="a" href={"/games"}>
-              Games
+            <Box as="a" href={"/news"}>
+              News
             </Box>
             <Box as="a" href={"/faq"}>
               FAQ
