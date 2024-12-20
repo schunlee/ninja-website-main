@@ -31,7 +31,13 @@ export default async function Posts() {
             </Text>
             <Image src="star.png" objectFit="cover" h="30px" ml="20px" />
           </Center>
-          <Box as="span" color="brown" fontWeight="extrabold" fontSize="25px" mt="100px">
+          <Box
+            as="span"
+            color="brown"
+            fontWeight="extrabold"
+            fontSize="25px"
+            mt="100px"
+          >
             {"Naruto".toUpperCase()}
           </Box>
           <SimpleGrid columns={[1, 2]} spacing={10} marginTop={30}>
@@ -44,7 +50,13 @@ export default async function Posts() {
               title="NARUTO SHIPPUDEN"
             />
           </SimpleGrid>
-          <Box as="span" color="brown" fontWeight="extrabold" fontSize="25px" mt="100px">
+          <Box
+            as="span"
+            color="brown"
+            fontWeight="extrabold"
+            fontSize="25px"
+            mt="100px"
+          >
             {"Boruto".toUpperCase()}
           </Box>
           <SimpleGrid columns={[1, 2]} spacing={10} marginTop={30}>

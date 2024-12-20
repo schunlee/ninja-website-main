@@ -30,7 +30,6 @@ const VideoCard = ({ hoverPic, title }: Props) => {
   return (
     <Box
       maxW={"450px"}
-      minW={{base: "380px", md: "450px"}}
       w={"full"}
       boxShadow={"2xl"}
       rounded={"md"}
