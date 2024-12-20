@@ -97,7 +97,7 @@ const TestimonialText = (props: Props) => {
 
   return (
     <Text
-      h={{ base: "100px" }}
+      h={{ base: "110px" }}
       w={{ base: "100%" }}
       textAlign={"left"}
       color="whiteAlpha.800"
