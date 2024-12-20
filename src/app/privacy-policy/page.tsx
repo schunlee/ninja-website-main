@@ -1,5 +1,6 @@
 import {
   Text,
+  Image,
   Heading,
   Stack,
   Center,
@@ -8,16 +9,25 @@ import {
   Link,
 } from "@chakra-ui/react";
 import DecoratedText from "../components/DecoratedText";
+import { fonts } from "../fonts";
 
 
 export default async function PrivacyPolicy() {
   return (
-    <Stack backgroundImage="url('https://pics.narutostorm.com/new_bg.png')" bgSize="cover" color="rgb(142, 53, 28)">
+    <Stack backgroundImage="url('https://pics.narutostorm.com/new_bg.png')" bgSize="cover" color="rgb(142, 53, 28)" pt="30px">
       <Center>
         <Stack pr="30px">
-          <Heading p="30px" fontSize="5xl">
-            <DecoratedText>Privacy Policy</DecoratedText>
-          </Heading>
+          <Center>
+            <Image src="star.png" objectFit="cover" h="30px" mr="20px" />
+            <Text
+              fontFamily={fonts.ruiziFont.style.fontFamily}
+              fontSize="30px"
+              color="rgb(142, 53, 28)"
+            >
+              Privacy Policy
+            </Text>
+            <Image src="star.png" objectFit="cover" h="30px" ml="20px" />
+          </Center>
           <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             This Privacy Policy describes our policies and procedures on the
             collection, use and disclosure of your information when you use the

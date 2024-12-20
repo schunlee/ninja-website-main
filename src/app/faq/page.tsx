@@ -78,11 +78,11 @@ const FAQ = () => {
       <Container maxW="80%">
         <Spacer pt="30px"></Spacer>
         <Center>
-          <Image src="star.png" objectFit="cover" h="50px" mr="20px" />
-          <Text fontFamily={fonts.ruiziFont.style.fontFamily} fontSize="50px" color="rgb(142, 53, 28)">
+          <Image src="star.png" objectFit="cover" h="30px" mr="20px" />
+          <Text fontFamily={fonts.ruiziFont.style.fontFamily} fontSize="30px" color="rgb(142, 53, 28)">
             FAQ
           </Text>
-          <Image src="star.png" objectFit="cover" h="50px" ml="20px" />
+          <Image src="star.png" objectFit="cover" h="30px" ml="20px" />
         </Center>
         <Stack minH="1000">
           <Text color="rgb(142, 53, 28)" fontSize="18" fontWeight="semibold">

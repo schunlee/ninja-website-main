@@ -23,15 +23,15 @@ export default async function Posts() {
         <Stack spacing={0} align={"center"}>
         <Spacer pt="30px"></Spacer>
           <Center>
-            <Image src="star.png" objectFit="cover" h="50px" mr="20px" />
+            <Image src="star.png" objectFit="cover" h="30px" mr="20px" />
             <Text
               fontFamily={fonts.ruiziFont.style.fontFamily}
-              fontSize="50px"
+              fontSize="30px"
               color="rgb(142, 53, 28)"
             >
               News
             </Text>
-            <Image src="star.png" objectFit="cover" h="50px" ml="20px" />
+            <Image src="star.png" objectFit="cover" h="30px" ml="20px" />
           </Center>
           <SimpleGrid columns={[1, 2]} spacing={10} marginTop={50}>
             {posts?.map((post) => (
