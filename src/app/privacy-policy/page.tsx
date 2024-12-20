@@ -8,7 +8,6 @@ import {
   ListItem,
   Link,
 } from "@chakra-ui/react";
-import DecoratedText from "../components/DecoratedText";
 import { fonts } from "../fonts";
 
 
