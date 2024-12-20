@@ -178,7 +178,7 @@ export default function GamerReviews() {
               />
             </Testimonial>
           </Center>
-          <Center>
+          {/* <Center>
             <Testimonial>
               <TestimonialAvatar
                 src={"https://pics.narutostorm.com/sabrina.png"}
@@ -192,7 +192,7 @@ export default function GamerReviews() {
                 </TestimonialText>
               </LeftTestimonialContent>
             </Testimonial>
-          </Center>
+          </Center> */}
         </Stack>
         <Stack
           direction={{ base: "column", md: "row" }}

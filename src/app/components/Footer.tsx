@@ -76,7 +76,7 @@ export default function Footer() {
           align={{ md: "center" }}
         >
           <Center>
-            <Text>© {new Date().getFullYear()} Naruto Shippuden</Text>
+            <Text>© {new Date().getFullYear()} Naruto Storm</Text>
           </Center>
           <Center>
             <Text>All rights reserved</Text>
