@@ -70,7 +70,7 @@ export default async function Posts() {
                     letterSpacing={1.1}
                   ></Text>
                   <Link
-                    href={`/games/${post.slug}`}
+                    href={`/news/${post.slug}`}
                     className="group font-normal overflow-hidden cursor-pointer no-underline transition fade-in-up "
                   >
                     <Heading
