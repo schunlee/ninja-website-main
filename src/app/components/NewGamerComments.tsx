@@ -145,7 +145,7 @@ export default function GamerReviews() {
           </Text>
           <Image src="star.png" objectFit="cover" h="30px" ml="10px" />
         </Center>
-        <Stack direction={["column"]} justify={["center"]} align={["center"]}>
+        <Stack direction={["column"]} justify={["center"]} align={["center"]} mb="50px">
           <Center>
             <Testimonial>
               <TestimonialAvatar
@@ -194,10 +194,10 @@ export default function GamerReviews() {
             </Testimonial>
           </Center> */}
         </Stack>
-        <Stack
+        {/* <Stack
           direction={{ base: "column", md: "row" }}
-          spacing={{ base: 10, md: 4, lg: 10 }}
-        ></Stack>
+          spacing={{ base: 50, md: 40, lg: 10 }}
+        ></Stack> */}
       </Container>
     </Box>
   );
