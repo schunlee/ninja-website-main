@@ -12,13 +12,13 @@ import DecoratedText from "../components/DecoratedText";
 
 export default async function PrivacyPolicy() {
   return (
-    <Stack bgColor="gray.100" position="relative" zIndex="0">
+    <Stack backgroundImage="url('https://pics.narutostorm.com/new_bg.png')" bgSize="cover" color="rgb(142, 53, 28)">
       <Center>
         <Stack pr="30px">
           <Heading p="30px" fontSize="5xl">
             <DecoratedText>Privacy Policy</DecoratedText>
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             This Privacy Policy describes our policies and procedures on the
             collection, use and disclosure of your information when you use the
             service and tells you about your privacy rights and how the law
@@ -32,7 +32,7 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="2xl">
             Interpretation
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             The words of which the initial letter is capitalized have meanings
             defined under the following conditions. The following definitions
             shall have the same meaning regardless of whether they appear in
@@ -41,12 +41,12 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="2xl">
             Definitions
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             For the purposes of this privacy policy:
           </Text>
           <List
             pl="40px"
-            color={"gray.500"}
+            color="rgb(142, 53, 28)"
             maxW="1200px"
             spacing={3}
             styleType="disc"
@@ -124,10 +124,10 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="2xl">
             Usage Data
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             Usage Data is collected automatically when using the Service.
           </Text>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             Usage Data may include information such as your device's internet
             protocol address (e.g. IP address), browser type, browser version,
             the pages of our service that you visit, the time and date of your
@@ -139,7 +139,7 @@ export default async function PrivacyPolicy() {
             your mobile operating system, the type of mobile internet browser
             you use, unique device identifiers and other diagnostic data.
           </Text>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             We may also collect information that your browser sends whenever you
             visit our service or when you access the service by or through a
             mobile device.
@@ -147,13 +147,13 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="2xl">
             Information Collected while Using the Application
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             While using our application, in order to provide features of our
             application, we may collect:
           </Text>
           <List
             pl="40px"
-            color={"gray.500"}
+            color="rgb(142, 53, 28)"
             maxW="1200px"
             spacing={3}
             styleType="disc"
@@ -191,12 +191,12 @@ export default async function PrivacyPolicy() {
           <Heading p="30px" fontSize="3xl">
             Use of Your Personal Data
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             The Company may use personal data for the following purposes:
           </Text>
           <List
             pl="40px"
-            color={"gray.500"}
+            color="rgb(142, 53, 28)"
             maxW="1200px"
             spacing={3}
             styleType="disc"
@@ -210,12 +210,12 @@ export default async function PrivacyPolicy() {
             <ListItem marginLeft="45px"><Text as="span" fontWeight="bold">Advertising or Marketing</Text></ListItem>
             <ListItem marginLeft="45px"><Text as="span" fontWeight="bold">Personalization</Text></ListItem>
           </List>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             We may share Your personal information in the following situations:
           </Text>
           <List
             pl="40px"
-            color={"gray.500"}
+            color="rgb(142, 53, 28)"
             maxW="1200px"
             spacing={3}
             styleType="disc"
@@ -258,7 +258,7 @@ export default async function PrivacyPolicy() {
           <Heading p="30px" fontSize="3xl">
             Retention of Your Personal Data
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             The Company will retain your personal data only for as long as is
             necessary for the purposes set out in this privacy policy. We will
             retain and use your personal data to the extent necessary to comply
@@ -266,7 +266,7 @@ export default async function PrivacyPolicy() {
             retain your data to comply with applicable laws), resolve disputes,
             and enforce our legal agreements and policies.
           </Text>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             The Company will also retain usage data for internal analysis
             purposes. Usage Data is generally retained for a shorter period of
             time, except when this data is used to strengthen the security or to
@@ -276,7 +276,7 @@ export default async function PrivacyPolicy() {
           <Heading p="30px" fontSize="3xl">
             Transfer of Your Personal Data
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             Your information, including personal data, is processed at the
             company's operating offices and in any other places where the
             parties involved in the processing are located. It means that this
@@ -285,11 +285,11 @@ export default async function PrivacyPolicy() {
             governmental jurisdiction where the data protection laws may differ
             than those from your jurisdiction.
           </Text>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             Your consent to this privacy policy followed by your submission of
             such information represents your agreement to that transfer.
           </Text>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             The Company will take all steps reasonably necessary to ensure that
             Your data is treated securely and in accordance with this privacy
             policy and no transfer of your personal data will take place to an
@@ -303,7 +303,7 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="2xl">
             Business Transactions
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             If the company is involved in a merger, acquisition or asset sale,
             your personal data may be transferred. We will provide notice before
             your personal data is transferred and becomes subject to a different
@@ -312,7 +312,7 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="2xl">
             Law enforcement
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             Under certain circumstances, the company may be required to disclose
             your personal data if required to do so by law or in response to
             valid requests by public authorities (e.g. a court or a government
@@ -321,13 +321,13 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="2xl">
             Other legal requirements
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             The company may disclose your personal data in the good faith belief
             that such action is necessary to:
           </Text>
           <List
             pl="40px"
-            color={"gray.500"}
+            color="rgb(142, 53, 28)"
             maxW="1200px"
             spacing={3}
             styleType="disc"
@@ -352,7 +352,7 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="3xl">
             Security of Your Personal Data
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             The security of your personal data is important to Us, but remember
             that no method of transmission over the internet, or method of
             electronic storage is 100% secure. While we strive to use
@@ -362,7 +362,7 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="4xl">
             Children's Policy
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             Our service does not address anyone under the age of 13. We do not
             knowingly collect personally identifiable information from anyone
             under the age of 13. If You are a parent or guardian and you are
@@ -371,7 +371,7 @@ export default async function PrivacyPolicy() {
             from anyone under the age of 13 without verification of parental
             consent, We take steps to remove that information from our servers.
           </Text>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             If We need to rely on consent as a legal basis for processing your
             information and your country requires consent from a parent, We may
             require your parent's consent before we collect and use that
@@ -380,13 +380,13 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="4xl">
             Links to Other Websites
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             Our service may contain links to other websites that are not
             operated by us. If you click on a third party link, You will be
             directed to that third party's site. We strongly advise you to
             review the privacy policy of every site you visit.
           </Text>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             We have no control over and assume no responsibility for the
             content, privacy policies or practices of any third party sites or
             services.
@@ -394,16 +394,16 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="4xl">
             Changes to this Privacy Policy
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             We may update our privacy policy from time to time. We will notify
             you of any changes by posting the new privacy policy on this page.
           </Text>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             We will let You know via email and/or a prominent notice on our
             service, prior to the change becoming effective and update the "Last
             updated" date at the top of this privacy policy.
           </Text>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             You are advised to review this Privacy Policy periodically for any
             changes. Changes to this privacy policy are effective when they are
             posted on this page.
@@ -411,13 +411,13 @@ export default async function PrivacyPolicy() {
           <Heading pl="30px" fontSize="4xl">
             Contact Us
           </Heading>
-          <Text pl="30px" color={"gray.500"} maxW="1200px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px">
             If you have any questions about this privacy policy, You can contact
             us:
           </Text>
           <List
             pl="40px"
-            color={"gray.500"}
+            color="rgb(142, 53, 28)"
             maxW="1200px"
             spacing={3}
             styleType="disc"
@@ -426,7 +426,7 @@ export default async function PrivacyPolicy() {
               By email: roxannecollins198[at]gmail.com
             </ListItem>
           </List>
-          <Text pl="30px" color={"gray.500"} maxW="1200px" pt="30px" pb="50px">
+          <Text pl="30px" color="rgb(142, 53, 28)" maxW="1200px" pt="30px" pb="50px">
             Last Updated: 2024-09-12
           </Text>
         </Stack>
