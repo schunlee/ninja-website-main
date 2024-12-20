@@ -69,7 +69,7 @@ const VideoCard = ({ hoverPic, title }: Props) => {
       </HStack>
       <Box
         mt="-5px"
-        height={{ base: "220px", md: "250px" }}
+        height={{ base: "280px", md: "250px" }}
         borderBottom="1px"
         borderLeft="1px"
         borderRight="1px"
@@ -99,7 +99,7 @@ const VideoCard = ({ hoverPic, title }: Props) => {
               </Link>
             </Center>
           </HStack>
-          <HStack px="50px" spacing={0} mt={{ base: "-30px", md: "-40px" }}>
+          <HStack px="50px" spacing={0} mt={{ base: "-5px", md: "-40px" }}>
             <Center>
               <Image
                 src="https://pics.narutostorm.com/KKTV.png"
@@ -117,7 +117,7 @@ const VideoCard = ({ hoverPic, title }: Props) => {
               </Link>
             </Center>
           </HStack>
-          <HStack px="50px" spacing={0} mt={{ base: "-20px", md: "-30px" }}>
+          <HStack px="50px" spacing={0} mt={{ base: "-5px", md: "-30px" }}>
             <Center>
               <Image
                 src="https://pics.narutostorm.com/pluto.png"
@@ -135,7 +135,7 @@ const VideoCard = ({ hoverPic, title }: Props) => {
               </Link>
             </Center>
           </HStack>
-          <HStack px="50px" spacing={0} mt={{ base: "-20px", md: "-30px" }}>
+          <HStack px="50px" spacing={0} mt={{ base: "-5px", md: "-30px" }}>
             <Center>
               <Image
                 src="https://pics.narutostorm.com/NETFLIX.png"
@@ -153,7 +153,7 @@ const VideoCard = ({ hoverPic, title }: Props) => {
               </Link>
             </Center>
           </HStack>
-          <HStack px="50px" spacing={0} mt={{ base: "-10px", md: "-25px" }}>
+          <HStack px="50px" spacing={0} mt={{ base: "-5px", md: "-25px" }}>
             <Center>
               <Image
                 src="https://pics.narutostorm.com/tubi.png"
