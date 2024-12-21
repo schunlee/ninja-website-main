@@ -227,6 +227,10 @@ const NAV_ITEMS: Array<NavItem> = [
     href: "/anime",
   },
   {
+    label: "Games",
+    href: "/games",
+  },
+  {
     label: "FAQ",
     href: "/faq",
   },
