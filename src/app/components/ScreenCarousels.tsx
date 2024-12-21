@@ -59,7 +59,7 @@ export default function ScreenCarousel({ slides }: CarouselProps) {
           <Flex w={{ base: "350px", md: "800px" }} {...carouselStyle}>
             {slides.map((slide, sid) => (
               <Box key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
-                <Text
+                {/* <Text
                   color="white"
                   fontSize="xs"
                   p="8px 12px"
@@ -67,7 +67,7 @@ export default function ScreenCarousel({ slides }: CarouselProps) {
                   top="0"
                 >
                   {sid + 1} / {slidesCount}
-                </Text>
+                </Text> */}
                 <Image
                   src={slide.img}
                   alt="carousel image"
