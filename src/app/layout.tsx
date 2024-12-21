@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { fonts} from './fonts';
+import { fonts } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -11,9 +11,7 @@ export const metadata: Metadata = {
 };
 
 import { Providers } from "./providers";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-
+import ConditionalLayout from "./components/ConditionalLayout";
 
 export default function RootLayout({
   children,
@@ -21,13 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fonts.hanyiFont.className} ${fonts.siyuanFont.className} ${fonts.ruiziFont.className}`}>
+    <html
+      lang="en"
+      className={`${fonts.hanyiFont.className} ${fonts.siyuanFont.className} ${fonts.ruiziFont.className}`}
+    >
       <body>
         <Providers>
-          <Header />
-          {children}
-
-          <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
         </Providers>
       </body>
     </html>
