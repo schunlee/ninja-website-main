@@ -121,8 +121,8 @@ const TestimonialAvatar = ({
     <Flex align={"center"} mt={8} direction={"column"}>
       <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
-        <Text fontWeight={600} color="rgb(142, 53, 28)">{name}</Text>
-        <Text fontSize={"sm"} color="rgb(142, 53, 28)">
+        <Text fontWeight={600} color="rgb(142, 53, 28)" textAlign="center">{name}</Text>
+        <Text fontSize={"sm"} color="rgb(142, 53, 28)" textAlign="center">
           {title}
         </Text>
       </Stack>

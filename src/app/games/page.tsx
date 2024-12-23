@@ -61,7 +61,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/english"
+                href="/games/portuguese"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -74,7 +74,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/english"
+                href="/games/german"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -87,7 +87,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/english"
+                href="/games/french"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -100,7 +100,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/english"
+                href="/games/vietnamese"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -113,7 +113,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/english"
+                href="/games/japanese"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -126,7 +126,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/english"
+                href="/games/spanish"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -139,7 +139,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/english"
+                href="/games/chinese"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"

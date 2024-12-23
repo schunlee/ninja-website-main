@@ -1,16 +1,16 @@
 // pages/games/english.js
 import React from 'react';
 
-const EnglishPage = () => {
+const VietnamesePage = () => {
   return (
     <div style={{ width: '100%', height: '100vh' }}>
       <iframe
         src="https://games.narutostorm.com"
         style={{ width: '100%', height: '100%', border: 'none' }}
-        title="Naruto Storm - English"
+        title="Naruto Storm - Vietnamese"
       />
     </div>
   );
 };
 
-export default EnglishPage;
+export default VietnamesePage;
