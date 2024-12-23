@@ -17,7 +17,7 @@ import { fonts } from "../fonts";
 export default function About() {
   return (
     <Box
-      backgroundImage="url('https://pics.narutostorm.com/new_bg.png')"
+      backgroundImage="url('https://pics.narutostorm.com/new_bg.jpg')"
       bgSize="cover" // 背景覆盖
       display="flex"
       justifyContent="center"

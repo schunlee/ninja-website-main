@@ -15,7 +15,7 @@ import { fonts } from "../fonts";
 const Games = () => {
   return (
     <Box
-      backgroundImage="url('https://pics.narutostorm.com/new_bg.png')"
+      backgroundImage="url('https://pics.narutostorm.com/new_bg.jpg')"
       bgSize="cover"
     >
       <Spacer pt="30px"></Spacer>

@@ -72,7 +72,7 @@ const faq_list = [
 const FAQ = () => {
   return (
     <Box
-      backgroundImage="url('https://pics.narutostorm.com/new_bg.png')"
+      backgroundImage="url('https://pics.narutostorm.com/new_bg.jpg')"
       bgSize="cover"
     >
       <Container maxW="80%">

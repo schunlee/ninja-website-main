@@ -13,7 +13,7 @@ import { fonts } from "../fonts";
 
 export default async function PrivacyPolicy() {
   return (
-    <Stack backgroundImage="url('https://pics.narutostorm.com/new_bg.png')" bgSize="cover" color="rgb(142, 53, 28)" pt="30px">
+    <Stack backgroundImage="url('https://pics.narutostorm.com/new_bg.jpg')" bgSize="cover" color="rgb(142, 53, 28)" pt="30px">
       <Center>
         <Stack pr="30px">
           <Center>

@@ -14,7 +14,7 @@ import VideoCard from "../components/VideoCard";
 export default async function Posts() {
   return (
     <Box
-      backgroundImage="url('https://pics.narutostorm.com/new_bg.png')"
+      backgroundImage="url('https://pics.narutostorm.com/new_bg.jpg')"
       bgSize="cover"
     >
       <Container maxW={"7xl"} pb="30px" as={Stack} spacing={12}>

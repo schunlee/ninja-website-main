@@ -12,7 +12,8 @@ const NewDownload = () => {
     <Center
       pt="0px"
       mt="-1px"
-      backgroundImage="url('https://pics.narutostorm.com/new_bg.png')"
+      backgroundImage="url('https://pics.narutostorm.com/new_bg.jpg')"
+      
       bgSize="cover" // 背景覆盖
       fontSize="lg"
       fontWeight="bold"
