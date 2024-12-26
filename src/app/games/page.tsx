@@ -133,7 +133,7 @@ const Games = () => {
                 bgColor="rgb(142, 53, 28)"
                 _hover={{ bgColor: "rgb(78, 27, 16)" }}
               >
-                한글
+                한국어
               </Button>
             </Center>
             <Center>
