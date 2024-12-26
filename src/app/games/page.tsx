@@ -126,14 +126,14 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/spanish"
+                href="/games/korean"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
                 bgColor="rgb(142, 53, 28)"
                 _hover={{ bgColor: "rgb(78, 27, 16)" }}
               >
-                Español
+                한글
               </Button>
             </Center>
             <Center>
