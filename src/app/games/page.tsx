@@ -44,7 +44,7 @@ const Games = () => {
             We provide exclusive language versions for players from all over the
             world
           </Text>
-          <SimpleGrid columns={[1, 2]} spacing={10} mt="30px">
+          <SimpleGrid columns={[1, 3]} spacing={10} mt="30px">
             <Center>
               <Button
                 as={Link}
@@ -113,14 +113,27 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/japanese"
+                href="/games/spanish"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
                 bgColor="rgb(142, 53, 28)"
                 _hover={{ bgColor: "rgb(78, 27, 16)" }}
               >
-                日本語
+                Español
+              </Button>
+            </Center>
+            <Center>
+              <Button
+                as={Link}
+                href="/games/thai"
+                width="80%"
+                size="lg"
+                color="whiteAlpha.800"
+                bgColor="rgb(142, 53, 28)"
+                _hover={{ bgColor: "rgb(78, 27, 16)" }}
+              >
+                ภาษาไทย
               </Button>
             </Center>
             <Center>
