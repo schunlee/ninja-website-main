@@ -15,6 +15,7 @@ const ConditionalLayout = ({ children }: { children: React.ReactNode }) => {
     "/games/german",
     "/games/french",
     "/games/spanish",
+    "/games/korean",
     "/games/portuguese",
   ]; // 不需要布局的页面
   const isNoLayout = noLayoutRoutes.includes(pathname);
