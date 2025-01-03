@@ -48,7 +48,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/english"
+                href="https://games.narutostorm.com"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -61,7 +61,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/portuguese"
+                href="https://games.narutostorm.com"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -74,7 +74,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/german"
+                href="https://games.narutostorm.com"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -87,7 +87,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/french"
+                href="https://games.narutostorm.com"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -100,7 +100,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/vietnamese"
+                href="https://games.narutostorm.com"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -113,7 +113,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/spanish"
+                href="https://games.narutostorm.com"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -126,7 +126,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/thai"
+                href="https://games.narutostorm.com"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -139,7 +139,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/korean"
+                href="https://www.naruto-shippuden.net/kr-f2a1-as2"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
@@ -152,7 +152,7 @@ const Games = () => {
             <Center>
               <Button
                 as={Link}
-                href="/games/chinese"
+                href="https://games.narutostorm.com"
                 width="80%"
                 size="lg"
                 color="whiteAlpha.800"
