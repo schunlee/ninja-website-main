@@ -1,15 +1,12 @@
-import React from 'react';
+"use client";
+import { useEffect } from 'react';
 
 const KoreanPage = () => {
-  return (
-    <div style={{ width: '100%', height: '100vh' }}>
-      <iframe
-        src="https://www.naruto-shippuden.net/kr-f2a1-as2"
-        style={{ width: '100%', height: '100%', border: 'none' }}
-        title="Naruto Storm - Korean"
-      />
-    </div>
-  );
+  useEffect(() => {
+    window.location.href = "https://www.naruto-shippuden.net/kr-f2a1-as2";
+  }, []);
+
+  return null;
 };
 
 export default KoreanPage;

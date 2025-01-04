@@ -1,16 +1,12 @@
-// pages/games/english.js
-import React from 'react';
+"use client";
+import { useEffect } from 'react';
 
 const ChinesePage = () => {
-  return (
-    <div style={{ width: '100%', height: '100vh' }}>
-      <iframe
-        src="https://games.narutostorm.com"
-        style={{ width: '100%', height: '100%', border: 'none' }}
-        title="Naruto Storm - Chinese"
-      />
-    </div>
-  );
+  useEffect(() => {
+    window.location.href = "https://games.narutostorm.com";
+  }, []);
+
+  return null;
 };
 
 export default ChinesePage;
