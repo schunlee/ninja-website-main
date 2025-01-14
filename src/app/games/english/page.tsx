@@ -8,7 +8,6 @@ import "/public/css/slick.css";
 import "/public/css/animate.css";
 import Script from "next/script";
 
-
 const Home = () => {
   useEffect(() => {
     const year = new Date().getFullYear();
@@ -16,10 +15,6 @@ const Home = () => {
     const mid = "G-WTJRGYNH5T";
     const apisecret = "9CrFr20pSrK994kdnQneAA";
     function getAdConfig() {
-       // Replace <path-to-track-module> with the actual path to the 'track' module.
-      
-      // ...
-      
       const domain = track.getcurrentDomain();
       const adCfg = {};
       adCfg.packId = 6632;
@@ -31,7 +26,7 @@ const Home = () => {
       adCfg.gclid = track.getQueryParam("gclid");
       return adCfg;
     }
-    const adCfg = getAdConfig();
+    let adCfg = getAdConfig();
     window.dataLayer = window.dataLayer || [];
     // 确保 gtag 函数可用
     const gtag = (...args) => {
@@ -70,7 +65,7 @@ const Home = () => {
         apisecret;
       console.log("copy str = " + str);
       track.copyToClipboard(str, () => {
-        const link = document.createElement("a");
+        let link = document.createElement("a");
         link.href =
           "https://cdn.jksfun.com/xshy_apk/pixelshippuden_f_release_1127160000.apk";
         link.click();
