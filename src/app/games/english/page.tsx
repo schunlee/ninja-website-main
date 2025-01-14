@@ -10,13 +10,13 @@ import Script from "next/script";
 
 const Home = () => {
   useEffect(() => {
-    var year = new Date().getFullYear();
+    const year = new Date().getFullYear();
     $("#copywrite").text(`${year}©Pixel Shippuden`);
     const mid = "G-WTJRGYNH5T";
     const apisecret = "9CrFr20pSrK994kdnQneAA";
     function getAdConfig() {
-      var domain = track.getcurrentDomain();
-      var adCfg = {};
+      const domain = track.getcurrentDomain();
+      const adCfg = {};
       adCfg.packId = 6632;
       adCfg.domain = domain;
       adCfg.utm_data = "";
@@ -26,7 +26,7 @@ const Home = () => {
       adCfg.gclid = track.getQueryParam("gclid");
       return adCfg;
     }
-    var adCfg = getAdConfig();
+    const adCfg = getAdConfig();
     window.dataLayer = window.dataLayer || [];
     // 确保 gtag 函数可用
     const gtag = (...args) => {
@@ -38,9 +38,9 @@ const Home = () => {
     gtag("js", new Date());
     gtag("config", mid, { gclid: adCfg.gclid, user_id: track.getDeviceId() });
 
-    function getAdurl(paramJson) {
-      let gclid = adCfg.gclid;
-      let domain = track.getcurrentDomain();
+    function getAdurl() {
+      const gclid = adCfg.gclid;
+      const domain = track.getcurrentDomain();
       let ad_detail_url = domain + "?gclid=";
       if (gclid) ad_detail_url += gclid;
       return ad_detail_url;
@@ -65,7 +65,7 @@ const Home = () => {
         apisecret;
       console.log("copy str = " + str);
       track.copyToClipboard(str, () => {
-        var link = document.createElement("a");
+        const link = document.createElement("a");
         link.href =
           "https://cdn.jksfun.com/xshy_apk/pixelshippuden_f_release_1127160000.apk";
         link.click();
