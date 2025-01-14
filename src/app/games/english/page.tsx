@@ -8,6 +8,7 @@ import "/public/css/slick.css";
 import "/public/css/animate.css";
 import Script from "next/script";
 
+
 const Home = () => {
   useEffect(() => {
     const year = new Date().getFullYear();
@@ -15,6 +16,10 @@ const Home = () => {
     const mid = "G-WTJRGYNH5T";
     const apisecret = "9CrFr20pSrK994kdnQneAA";
     function getAdConfig() {
+       // Replace <path-to-track-module> with the actual path to the 'track' module.
+      
+      // ...
+      
       const domain = track.getcurrentDomain();
       const adCfg = {};
       adCfg.packId = 6632;
