@@ -5,7 +5,8 @@ const nextConfig = {
     },
     typescript: {
         ignoreBuildErrors: true, // 在构建期间忽略 TypeScript 错误
-    }
+    },
+    reactStrictMode: false
   };
   
   export default nextConfig;

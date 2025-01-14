@@ -9,6 +9,7 @@ const ConditionalLayout = ({ children }: { children: React.ReactNode }) => {
 
   const noLayoutRoutes = [
     "/games/english",
+    "/games/english/nativetrack",
     "/games/japanese",
     "/games/chinese",
     "/games/vietnamese",
