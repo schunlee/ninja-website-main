@@ -1,10 +1,76 @@
 import { Button } from "@chakra-ui/react/button";
-import React from "react";
+import React, { useEffect } from "react";
 
 function DownloadButton() {
+  useEffect(() => {
+    const mid = "G-WTJRGYNH5T";
+    const apisecret = "9CrFr20pSrK994kdnQneAA";
+    function getAdConfig() {
+      const domain = track.getcurrentDomain();
+      const adCfg = {};
+      adCfg.packId = 6632;
+      adCfg.domain = domain;
+      adCfg.utm_data = "";
+      adCfg.gad_source = track.getQueryParam("gad_source");
+      adCfg.wbraid = track.getQueryParam("wbraid");
+      adCfg.gbraid = track.getQueryParam("gbraid");
+      adCfg.gclid = track.getQueryParam("gclid");
+      return adCfg;
+    }
+    let adCfg = getAdConfig();
+    window.dataLayer = window.dataLayer || [];
+    // 确保 gtag 函数可用
+    const gtag = (...args) => {
+      window.dataLayer.push(args);
+    };
+
+    // 将 gtag 函数绑定到 window 对象，以便在其他地方可以访问
+    window.gtag = gtag;
+    gtag("js", new Date());
+    gtag("config", mid, { gclid: adCfg.gclid, user_id: track.getDeviceId() });
+
+    function getAdurl() {
+      const gclid = adCfg.gclid;
+      const domain = track.getcurrentDomain();
+      let ad_detail_url = domain + "?gclid=";
+      if (gclid) ad_detail_url += gclid;
+      return ad_detail_url;
+    }
+
+    function onClick() {
+      track.trackGTAGAndBI("G1_ClickAdPageView", 30, adCfg);
+      const adurl = getAdurl();
+      const localuuid = track.getDeviceId();
+      const str =
+        "touristuuid=" +
+        localuuid +
+        "&adurl=" +
+        adurl +
+        "&gad_source=" +
+        adCfg.gad_source +
+        "&gbraid=" +
+        adCfg.gbraid +
+        "&mid=" +
+        mid +
+        "&apisecret=" +
+        apisecret;
+      console.log("copy str = " + str);
+      track.copyToClipboard(str, () => {
+        let link = document.createElement("a");
+        link.href =
+          "https://cdn.jksfun.com/xshy_apk/pixelshippuden_f_release_1127160000.apk";
+        link.click();
+      });
+    }
+    document.getElementById("downloadBtn").addEventListener("click", onClick);
+    track.trackGTAGAndBI("G1_AdPageView1", 20, adCfg);
+    track.commit(adCfg.domain, adCfg.gclid, adCfg.gad_source, adCfg.gbraid);
+  }, []);
   return (
+    <>
     <Button
       as="a"
+      id="downloadBtn"
       href="https://cdn.jksfun.com/xshy_apk/pixelshippuden_f_release_1127160000.apk"
       bgColor="black"
       mr={3}
@@ -22,6 +88,9 @@ function DownloadButton() {
     >
       DOWNLOAD
     </Button>
+    
+    </>
+    
   );
 }
 
