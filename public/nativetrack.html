@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naruto shippuden pixel</title>
+    <script src="./js/nativeTrackFireBase_v12.js"></script>
+    <script src="./js/crypto-js.js"></script>
+
+    <script>
+      let measurement_id = track.getQueryParam('measureid');
+      let api_secret = track.getQueryParam('apisecret');
+      track.init(measurement_id, api_secret);
+      function getAdConfig() {
+            var domain = track.getcurrentDomain();
+            var adCfg = {};
+            adCfg.packId = 6632;
+            adCfg.domain = track.getQueryParam('adurl');
+            adCfg.gad_source = track.getQueryParam('gad_source');
+            adCfg.wbraid = track.getQueryParam('wbraid');
+            adCfg.gbraid = track.getQueryParam('gbraid');
+            adCfg.gclid = track.getQueryParam('gclid');
+            return adCfg;
+       }
+      localStorage.setItem('Touristuuid', track.getQueryParam('touristuuid'));
+      var adCfg = getAdConfig();
+         // 动态加载 GATG 脚本
+        (function() {
+            const gtagScript = document.createElement('script');
+            gtagScript.async = true;
+            gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${measurement_id}`;
+            document.head.appendChild(gtagScript);
+
+            // 初始化 GATG 配置
+            gtagScript.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                window.gtag = gtag;
+                gtag('js', new Date());
+                gtag('config', measurement_id);
+                console.log(`Google Analytics initialized with measurement_id: ${measurement_id}`);
+            };
+        })();
+    </script>
+
+</head>
+<body>
+    <script>
+       
+    function trackCustomEvent(event, order, ext) {
+        const gclid = adCfg.gclid || "";
+        const gad_source = adCfg.gad_source || "";
+        const wbraid = adCfg.wbraid || "";
+        const gbraid = adCfg.gbraid || "";
+        track.trackMAPIAndBI(event, adCfg, order, ext);
+        console.log(
+        `trackCustomEvent - Event: ${event}, Order: ${order}, Ext: ${ext}, Ad Config: gclid=${gclid}, gad_source=${gad_source}, wbraid=${wbraid}, gbraid=${gbraid}`
+        );
+    }
+    function trackPurchaseEvent(currency, cost, orderId, goodsId, goods_name,evtTag) {
+      track.trackPurchaseMAPIAndBI(evtTag + "purchase", {
+          currency:currency,
+          cost:cost,
+          orderId:orderId,
+           goodsId:goodsId,
+            goods_name:goods_name
+      },adCfg, 3100, Math.round(parseFloat(cost) * 100));
+      track.trackPurchaseMAPIAndBI("purchase", {
+          currency:currency,
+          cost:cost,
+          orderId:orderId,
+           goodsId:goodsId,
+            goods_name:goods_name
+      },adCfg, 3100, Math.round(parseFloat(cost) * 100));
+      console.log(
+        `trackPurchaseEvent - Currency: ${currency}, Cost: ${cost}, Order ID: ${orderId}, Goods ID: ${goodsId}, Goods Name: ${goods_name}, Ad Config: ${JSON.stringify(
+            adCfg
+        )}`
+    );
+    }
+
+    </script>
+</body>
+</html>
