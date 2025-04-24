@@ -188,6 +188,30 @@ let Track = (function () {
     };
 
     _proto.copyToClipboard=function(text, onSuccess){
+        function fallbackCopyToClipboard(text, onSuccess) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.opacity = "0";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+    
+            try {
+                const successful = document.execCommand('copy');
+                if (successful && typeof onSuccess === 'function') {
+                    onSuccess();
+                }
+                return successful ? 'Text copied to clipboard: ' + text : 'Failed to copy text';
+            } catch (err) {
+                onSuccess();
+                console.error('Fallback: Oops, unable to copy', err);
+                return 'Unable to copy text to clipboard: ' + err;
+            } finally {
+    
+                document.body.removeChild(textArea);
+            }
+        };
         if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
                 return navigator.clipboard.writeText(text)
                     .then(() => {
